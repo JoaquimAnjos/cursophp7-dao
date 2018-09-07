@@ -12,7 +12,7 @@ $usuario = new Usuario();
 $usuario->loadById(3);
 echo $usuario;*/
 
-//Carrega um a lista de Usuarios
+//Carrega uma lista de Usuarios
 //$list = Usuario::getList();
 //echo json_encode($list);
 
@@ -20,8 +20,19 @@ echo $usuario;*/
 //$search = Usuario::search("us");
 //echo json_encode($search);
 
-$usuario = new Usuario();
+//Carrega login
+/*$usuario = new Usuario();
 $usuario->login('user', '12345');
+echo $usuario;*/
 
+/*Cria Usuario
+$usuario = new Usuario("aluno3","aluno31");
+$usuario->insert();
+echo $usuario;*/
+
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("Professor", "13245");
 echo $usuario;
+
 ?>
