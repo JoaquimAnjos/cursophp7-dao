@@ -30,9 +30,15 @@ $usuario = new Usuario("aluno3","aluno31");
 $usuario->insert();
 echo $usuario;*/
 
+/*Alterar Usuario
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->update("Professor", "13245");
+echo $usuario;*/
+$usuario = new Usuario();
+$usuario->loadById(9);
+$usuario->delete();
 echo $usuario;
+
 
 ?>
